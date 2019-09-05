@@ -32,6 +32,43 @@ composer require cloudest-co/laravel-nova-email-log
     }
 ```
 
+## Relationships
+
+Add the trait to your user model so that you can reference the logs.
+
+``` php
+    <?php
+    
+    use Cloudest\LaravelEloquentEmailLog\HasEmailLogs;
+
+    class User extends Authenticatable
+    {
+        use HasEmailLogs;
+        
+        ...
+    }
+```
+
+Add the relation to your Nova User resource so that you can see a list of email logs per user.
+
+``` php
+    /**
+     * Get the fields displayed by the resource.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return array
+     */
+    public function fields(Request $request)
+    {
+        return [
+            
+            ...
+
+            MorphMany::make('Email Logs', 'emailLogs', \Cloudest\NovaEmailLog\EmailLogResource::class),
+        ];
+    }
+```
+
 ### Security
 
 If you discover any security related issues, please email chris@cloudest.co.uk instead of using the issue tracker.
