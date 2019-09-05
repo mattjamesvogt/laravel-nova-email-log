@@ -1,5 +1,5 @@
 {
-    "name": "cloudest-co/nova-email-log",
+    "name": "cloudest-co/laravel-nova-email-log",
     "description": "A Laravel Nova tool.",
     "keywords": [
         "laravel",
