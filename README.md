@@ -1,4 +1,4 @@
-# Adds an Email Log resource so that you can see all outgoing emails from your app.
+# Laravel Nova Email Log
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/cloudest-co/laravel-eloquent-email-log.svg?style=flat-square)](https://packagist.org/packages/cloudest-co/:package_name)
 [![Build Status](https://img.shields.io/travis/cloudest-co/laravel-eloquent-email-log/master.svg?style=flat-square)](https://travis-ci.org/cloudest-co/:package_name)
