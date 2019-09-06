@@ -8,6 +8,8 @@
 
 Logs all outbound emails to the database, and allows you to view them in Laravel Nova.
 
+![Demo](email-log-demo.gif?raw=true "Demo")
+
 ## Installation
 
 You can install the package via composer:
